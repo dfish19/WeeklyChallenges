@@ -40,7 +40,6 @@ namespace ChallengesWithTestsMark8
         {
             return "Hello, Leigh!";
         }
-
         public string GetHey()
         {
             return "HEY!";
