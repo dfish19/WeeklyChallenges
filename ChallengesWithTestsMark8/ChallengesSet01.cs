@@ -46,7 +46,7 @@ namespace ChallengesWithTestsMark8
             {
                 return $"Hello, {nameOfPerson}!";
             }
-        }
+            }
 
         public string GetHey()
         {
