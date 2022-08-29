@@ -84,8 +84,6 @@ namespace ChallengesWithTestsMark8
             {
                 return str1.Length;
             }
-
-
         }
 
         public int Sum(int[] numbers)
