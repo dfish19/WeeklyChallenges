@@ -128,6 +128,8 @@ namespace ChallengesWithTestsMark8
             return numbers.Sum() % 2 != 0;
         }
 
+       
+
         public long CountOfPositiveOddsBelowNumber(long number)
         {
             if (number <= 0)
