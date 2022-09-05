@@ -10,51 +10,57 @@ namespace ChallengesWithTestsMark8
         {
             bool isLetter = true;
 
-            if (isLetter)
-            {
-                return char.IsLetter(c);
-            }
-            else
-            {
-                return char.IsDigit(c);
-            }
+            //if (isLetter)
+            //{
+            //    return char.IsLetter(c);
+            //}
+            //else
+            //{
+            //    return char.IsDigit(c);
+            //}
+                return (isLetter)? char.IsLetter(c): char.IsLetter(c);
           
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            if (vals.Length % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
+            //if (vals.Length % 2 == 0)
+            //{
+            //    return true
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return (vals.Length % 2 == 0) ?true :false;
+            
         }
 
         public bool IsNumberEven(int number)
         {
-            if(number % 2 == 0)      
-            {
-                return true; 
-            }
-            else
-            {
-                return false;
-            }
+            //if(number % 2 == 0)      
+            //{
+            //    return true; 
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return(number % 2 == 0)?true :false;
         }
 
         public bool IsNumberOdd(int num)
         {
-            if(num % 2 != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //if(num % 2 != 0)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return(num % 2 != 0)?true :false;
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
@@ -76,14 +82,15 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            if (str1.Length > str2.Length)
-            {
-                return str2.Length;
-            }
-            else
-            {
-                return str1.Length;
-            }
+            //if (str1.Length > str2.Length)
+            //{
+            //    return str2.Length;
+            //}
+            //else
+            //{
+            //    return str1.Length;
+            //}
+            return (str1.Length > str2.Length) ? str2.Length : str1.Length;
         }
 
         public int Sum(int[] numbers)
@@ -132,14 +139,15 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            if (number <= 0)
-            {
-                return 0;
-            }
-            else
-            {
-                return number / 2;
-            }
+            //if (number <= 0)
+            //{
+            //    return 0;
+            //}
+            //else
+            //{
+            //    return number / 2;
+            //}
+            return(number <= 0)? 0: number / 2;
         }
     }
 }
