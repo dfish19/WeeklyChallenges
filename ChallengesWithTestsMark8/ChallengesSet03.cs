@@ -8,14 +8,15 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            for (int i = 0; i < vals.Length; i++)
-            {
-                if (vals[i] == false)
-                {
-                    return true;
-                }
-            }
-            return false;
+            //for (int i = 0; i < vals.Length; i++)
+            //{
+            //    if (vals[i] == false)
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
+            return vals.Contains(false);
         }
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
@@ -40,6 +41,11 @@ namespace ChallengesWithTestsMark8
                     return true;
                 }
                     return false;
+            //var ContainsUpper = password.Any(x => char.IsUpper(x))
+            //&& password.Any(x => char.IsLower(x))
+            //&& password.Any(x => char.IsDigit(x));
+            //return ContainsUpper;
+
         }
 
         public char GetFirstLetterOfString(string val)
